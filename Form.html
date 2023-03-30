@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Form</title>
+    <link rel="stylesheet" href="Form.css" />
+  </head>
+  <body>
+    <section class="on-site">
+      <form action="">
+        <div class="clfname">
+          <label for="" id="fname">First Name*</label>
+          <input type="text" id="first-name" value="Lê Trung" />
+        </div>
+        <div class="cllname">
+          <label for="" id="lname">Last Name*</label>
+          <input type="text" id="last-name" value="Tùng" />
+        </div>
+        <br />
+        <br />
+        <p>Where are you?*</p>
+        <input type="text" id="place" value="Duy Xuyên-Quảng Nam" />
+        <p>Street Address</p>
+        <input type="text" id="address" value="Duy Phước" />
+        <br />
+
+        <table>
+          <tr>
+            <td><input type="text" name="city" /></td>
+            <td><input type="text" name="region" /></td>
+          </tr>
+          <tr>
+            <td>City</td>
+            <td>Stage/Region/Province</td>
+          </tr>
+          <tr>
+            <td><input type="text" name="zipcode" /></td>
+            <td>
+              <select name="country" id="country">
+                <option value="Viet Nam">Việt Nam</option>
+                <option value="Lao">Lào</option>
+                <option value="Campuchia">Campuchia</option>
+                <option value="Thai Lan">Thái Lan</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Postal/Zip Code</td>
+            <td>Country</td>
+          </tr>
+        </table>
+        <p>What's is the progres status?*</p>
+        <input type="range" value="80%" id="progres" />
+
+        <p>Do you need any more material?*</p>
+        <input type="radio" name="rad" />Yes
+        <br />
+        <input type="radio" name="rad" />No
+        <br />
+        <p>What more do you need?</p>
+        <div class="moreneed">
+          <div>
+            <input type="checkbox" name="sand" value="sand" />Sand
+          </div>
+          <div>
+            <input type="checkbox" name="brick" value="brick" />Brick
+          </div>
+          <div>
+            <input type="checkbox" name="rods" value="rods" />Rods
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="other"
+              value="others"
+            />Others
+          </div>
+        </div>
+        <p>Any other comments?</p>
+        <textarea name="comment" id="" cols="20" rows="7"></textarea>
+      </form>
+    </section>
+  </body>
+  <script src="./Form.js"></script>
+</html>
